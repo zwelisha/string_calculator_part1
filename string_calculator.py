@@ -2,7 +2,7 @@ import re
 import logging
 import time
 """
-Copyright @2019
+Copyright: @2019
 Author: Zweli Mthethwa
 """
 # create and configure logger
@@ -15,6 +15,17 @@ class StringCalculator():
     def __init__(self):
         pass
     def add(self, numbers):
+        """
+        Calculates the sum of all the numbers in string 'numbers'. Numbers bigger than 1000 are ignored
+        when calculating the sum. Throws an exception if any of the numbers in string 'numbers' is negative.
+
+        Parameters:
+        numbers (str): the string with numbers separated by commas or any delimiter
+
+        Returns:
+        int: the sum of all numbers in string 'numbers'
+        """
+
         if len(numbers) == 0:
             return 0
         else:

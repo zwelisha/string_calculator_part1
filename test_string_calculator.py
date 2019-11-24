@@ -1,6 +1,9 @@
 import pytest
 from string_calculator import StringCalculator
-
+"""
+Copyright: @2019
+Author: Zweli Mthethwa
+"""
 calculator = StringCalculator()
 
 def test_add():
