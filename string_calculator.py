@@ -27,7 +27,8 @@ class StringCalculator():
                     logger.info("A negative number: " + string_values[i] + " was found")
                     negatives.append(string_values[i])
                     continue
-                total += int(string_values[i])
+                if int(string_values[i]) <= 1000:
+                    total += int(string_values[i])
             if len(negatives) == 0:
                 return total
             else:
