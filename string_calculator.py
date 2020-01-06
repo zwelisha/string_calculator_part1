@@ -6,8 +6,8 @@ Copyright: @2019
 Author: Zweli Mthethwa
 """
 # create and configure logger
-logging.basicConfig(filename = "logs/string_calculator.log", level=logging.DEBUG, format="%(asctime)s %(message)s")
-logger = logging.getLogger()
+#logging.basicConfig(filename = "logs/string_calculator.log", level=logging.DEBUG, format="%(asctime)s %(message)s")
+#logger = logging.getLogger()
 
 class StringCalculator():
     """This class has functions that do basic mathematics operations on numbers"""
@@ -55,5 +55,6 @@ class StringCalculator():
 def main():
     calculator = StringCalculator()
     print(calculator.add("//;\n-31;-2"))
+    print(calculator.add("//4\n142"))
 if __name__ == '__main__':
     main()
