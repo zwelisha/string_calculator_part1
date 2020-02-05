@@ -25,3 +25,4 @@ def test_add():
 
     # testing for numbers bigger than 1000
     assert calculator.add("2, 1001") == 2
+    assert calculator.add("//[(-_-')][%]\n1(-_-')2%3") == 6
